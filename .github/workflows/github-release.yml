@@ -1,0 +1,25 @@
+name: GitHub release
+
+on:
+  schedule:
+    - cron: '50 * * * *'
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+jobs:
+  release:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+
+      - name: Create Source Distribution
+        run: python setup.py sdist --formats=gztar,zip
+
+      - name: Create release
+        run: gh release create v$( date +%Y-%m-%d-%H-%M ) ./dist/*
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
