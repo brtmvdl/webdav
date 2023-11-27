@@ -1,5 +1,7 @@
 # [WebDAV](https://pt.wikipedia.org/wiki/WebDAV)
 
+[WEBDAV (HTTP Extensions for Distributed Authoring)](https://www.ietf.org/rfc/rfc2518.txt)
+
 [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/brtmvdl/webdav/npm-publish.yml?label=GitHub%20Actions&link=https%3A%2F%2Fgithub.com%2Fbrtmvdl%2Fwebdav%2Factions%2Fworkflows%2Fnpm-publish.yml)](https://github.com/brtmvdl/webdav/actions/workflows/npm-publish.yml) [![npm](https://img.shields.io/npm/dw/%40brtmvdl/webdav?label=NPM%20Weekly%20Downloads)](https://www.npmjs.com/package/@brtmvdl/webdav) [![github/stars](https://img.shields.io/github/stars/brtmvdl/webdav?style=social)](https://img.shields.io/github/stars/brtmvdl/webdav?style=social) 
 
 ## social & donate
