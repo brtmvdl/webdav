@@ -1,7 +1,9 @@
-FROM golang:alpine
+FROM tmvdl/python:freeze
 
-WORKDIR /go
+WORKDIR /app
 
 COPY . .
 
-CMD go run ./src/main.go
+RUN python3 ./setup.py build
+
+CMD ./build/exe.linux-x86_64-3.10/webdav

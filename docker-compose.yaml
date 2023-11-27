@@ -4,6 +4,6 @@ services:
   app:
     build: './'
     volumes:
-      - './:/go'
+      - './:/app'
     ports:
       - '8080:80'
