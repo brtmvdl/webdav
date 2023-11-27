@@ -1,0 +1,17 @@
+name: webdav
+summary: webdav server
+description: webdav server
+version: 0.1.0
+grade: stable
+confinement: strict
+base: core22
+
+apps:
+  webdav:
+    command: bin/webdav
+    plugs: [home, network, network-bind, removable-media, audio-playback, audio-record, camera, system-files]
+
+parts:
+  webdav:
+    plugin: python
+    source: https://github.com/brtmvdl/webdav.git
